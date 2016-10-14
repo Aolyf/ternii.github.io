@@ -1,0 +1,17 @@
+.spin{
+  font-family:'Amiri', serif;
+  border-style:double;
+  width:100px;
+  text-align:center;
+  margin:-2px;
+}
+
+ul#infos li{
+  display:inline-block;
+}
+#txt{
+  margin:-33px 0px 0px 405px;
+  position:absolute;
+  bordeR-STYLE:none;
+  border-width:10px;
+}
