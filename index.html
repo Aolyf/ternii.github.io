@@ -9,54 +9,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="expires" content="Sun, 01 Jan 2017 23:59:59 GMT" />
     <script>
-    function startTime() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
-    document.getElementById('txt').innerHTML =
-    h + ":" + m + ":" + s;
-    var t = setTimeout(startTime, 500);
-}
-function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    return i;
-}</script>
+      function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =
+      s;
+      var t = setTimeout(startTime, 500);
+      }
+      function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+      }
+    </script>
    <!-- <link rel="stylesheet" href="css.css"> -->
-    <style>
-     .spin{
-  font-family:'Amiri', serif;
-  border-style:double;
-  width:100px;
-  text-align:center;
-  margin:-2px;
-}
+    
+  <style>
+  .spin{
+    font-family:'Amiri', serif;
+    border-style:double;
+    width:100px;
+    text-align:center;
+    margin:-2px;
+  }
 
-ul#infos li{
-  display:inline-block;
-}
-#txt{
-  margin:-33px 0px 0px 405px;
-  position:absolute;
-  bordeR-STYLE:none;
-  border-width:10px;
-  color:white;
-}
-body{
-  background-color:BLACK;
-  
-}
-p{
-  color:white;
-}   
+  ul#infos li{
+    display:inline-block;
+  }
+  #txt, .topp{
+    position:relative; 
+    color:white;
+    text-align:center;
+  }
+  body{
+    background-color:BLACK;
+
+  }
+  #bio{
+    color:white;
+  }
     </style>
+    
     <title>yawn</title>
   </head>
 
-  <body onload="startTime()">
-    <p> welcome friend. have you come to ｒｅｆｒｅｓｈ yourself? <div id="txt"></div> </p>
-  
+<body onload="startTime()">
+  <p class="topp"> enjoy your stay.<div id="txt"></div> </p>
+<p class="topp"> make every second count. </p>
+<hr >
   </body>
 </html>
