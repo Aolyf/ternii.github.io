@@ -10,56 +10,129 @@
     <meta http-equiv="expires" content="Sun, 01 Jan 2017 23:59:59 GMT" />
     <link rel="icon" type="image/png" href="http://www.mariowiki.com/images/thumb/e/e9/SmashBros_Emblem.png/35px-SmashBros_Emblem.png" />
     <script>
-      function startTime() {
-      var today = new Date();
-      var h = today.getHours();
-      var m = today.getMinutes();
-      var s = today.getSeconds();
-      m = checkTime(m);
-      s = checkTime(s);
-      document.getElementById('txt').innerHTML =
-      s;
-      var t = setTimeout(startTime, 500);
-      }
-      function checkTime(i) {
-          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-          return i;
-      }
+    var space = " ";
+    var speed = "50";
+    var pos = 0;
+    var msg = "Congratulations! You won!";
+    function Scroll()
+    {
+    document.title = msg.substring(pos, msg.length) + space + msg.substring(0,pos);
+    pos++;
+    if (pos > msg.length) pos = 0;
+    window.setTimeout("Scroll()", speed);
+    }
+    Scroll();
     </script>
-   <!-- <link rel="stylesheet" href="css.css"> -->
-    
+
   <style>
-  .spin{
-    font-family:'Amiri', serif;
-    border-style:double;
-    width:100px;
-    text-align:center;
-    margin:-2px;
+  .wrap {
+  text-align: center;
+  border-style: solid;
+  border-color: cyan;
+  width: 70%;
+  margin: auto;
+  
+}
+li a {
+  color:white;
+  
+}
+
+hr{
+  border-style:solid;:cyan;
+}
+p a{
+  color:pink;
+}
+body {
+  background-color: BLACK;
+  color:cyan; ;
+}
+
+#aolyf-cat {
+  width: 25%;
+  border-radius: 50%;
+  border-color: red;
+}
+
+ul {
+  position: fixed;
+  color:pink;
+}
+
+ul a:visited {
+  color: pink;
+}
+
+li {
+ list-style-type:none;
+}
+
+.bio {
+  text-align: center;
+  font-family: 'Crimson Text', sans-serif;
+}
+
+.bio-portfolio img {
+  height: 200px;
+  width: 35%;
+  margin: auto;
   }
 
-  ul#infos li{
-    display:inline-block;
-  }
-  #txt, .topp{
-    position:relative; 
-    color:white;
-    text-align:center;
-  }
-  body{
-    background-color:BLACK;
+.media-links a { MARGIN: 10px;}
 
-  }
-  #bio{
-    color:white;
-  }
     </style>
     
-    <title>yawn</title>
+    <title>Aolyf..</title>
   </head>
 
-<body onload="startTime()">
-  <p class="topp"> enjoy your stay.<div id="txt"></div> </p>
-<p class="topp"> make every second count. </p>
-<hr >
+<body>
+<body>
+  <div class="wrap">
+    <div>
+      <p>
+      <ul>
+        <li><a href="#Portfolio">Portfolio</a></li>
+        <li><a href="#Training">Training</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+      </p>
+      <span>I am Calvin.</span>
+      <img id="aolyf-cat" src="https://pbs.twimg.com/profile_images/737890013636091904/pI4p3nA9.jpg" ALT="muh cat" />
+      <span>I make things.</span>
+    </div>
+    <hr>
+    <div class="bio-portfolio">
+      <h1 id="Portfolio"> Portfolio </h1>
+      <iframe width="50%" height="300" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/268212537&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe><br
+      />
+      <img src="https://www.backyardchirper.com/blog/wp-content/uploads/2013/10/SqlB6Qc-1024x768.jpg" ALT="mmm" />
+      <img src="http://cdn3.list25.com/wp-content/uploads/2015/04/25-www.carbonated.tv-117908_story__podphoto-610x479.jpg" ALT="mmm" />
+    </div>
+    <hr />
+    <div class="bio-portfolio">
+      <h1 id="Training"> Training </h1>
+      <img src="http://static5.techinsider.io/image/55e9cb1c9dd7cc17008b84d9-1200/the-trend-quickly-was-moved-into-tumblr-where-dedicated-birds-with-arms-blogs-cropped-up-in-2009-most-of-the-new-pages-aggregated-from-the-original-reeelapse-thread.jpg" ALT="mmm"
+      />
+      <img src="http://cdn77.sadanduseless.com/wp-content/uploads/2014/05/bird-with-arms19.jpg" ALT="mmm" />
+      <img src="http://i.imgur.com/dpXMhlo.jpg" ALT="mmm" />
+    </div>
+    <hr />
+
+    <h1 id="Contact">Contact</h1>
+    <p>Email is cool. send some to <a href="mailto:ccintj@gmail.com">ccintj@gmail.com</a>. except spam. keep that to urself.</p>
+    <p>You can also message me on any of these platforms, since I'm on them every day.</p>
+    <div class="media-links">
+      <a href="http://www.soundcloud.com/theniwokeup" target="_blank" <i class="fa fa-soundcloud glow" style="font-size:48px;color:coral"></i>
+      </a>
+      <a href="http://steamcommunity.com/id/aolyf" target="_blank" <i class="fa fa-steam glow" style="font-size:48px;color:white"></i>
+      </a>
+      <a href="https://www.youtube.com/user/xNekoOtaku" target="_blank" <i class="fa fa-youtube-play glow" style="font-size:48px;color:Crimson"></i>
+      </a>
+      <a href="https://twitter.com/aolyf" target="_blank" <i class="fa fa-twitter glow" style="font-size:48px;color:PaleTurquoise "></i>
+      </a>
+</div>
+
+</body>
   </body>
 </html>
