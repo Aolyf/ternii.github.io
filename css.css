@@ -1,25 +1,55 @@
-.spin{
-  font-family:'Amiri', serif;
-  border-style:double;
-  width:100px;
-  text-align:center;
-  margin:-2px;
-}
-
-ul#infos li{
-  display:inline-block;
-}
-#txt{
-  margin:-33px 0px 0px 405px;
-  position:absolute;
-  bordeR-STYLE:none;
-  border-width:10px;
-  color:white;
-}
-body{
-  background-color:BLACK;
+.wrap {
+  text-align: center;
+  border-style: solid;
+  border-color: black;
+  width: 70%;
+  margin: auto;
+position:relative;
   
 }
-p{
+li a {
   color:white;
+ max-width:auto;
 }
+
+
+p a{
+  color:pink;
+}
+body {
+  background-color: BLACK;
+  color:cyan; ;
+}
+
+#aolyf-cat {
+  width:10%;
+  border-radius: 50%;
+
+}
+
+ul {
+  position: fixed;
+  color:pink;
+}
+
+ul a:visited {
+  color: pink;
+}
+
+li {
+ list-style-type:none;
+}
+
+.bio {
+  text-align: center;
+  font-family: 'Crimson Text', sans-serif;
+}
+
+.bio-portfolio img {
+  height: 25%;
+  width: 35%;
+  margin: auto;
+  }
+
+.media-links a { MARGIN: 10px;}
+
