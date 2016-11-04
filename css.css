@@ -1,15 +1,7 @@
-.wrap {
-  text-align: center;
-  border-style: solid;
-  border-color: black;
-  width: 70%;
-  margin: auto;
-position:relative;
-  
-}
+
 li a {
-  color:white;
- max-width:auto;
+  color:cyan;
+ 
 }
 
 
@@ -21,35 +13,14 @@ body {
   color:cyan; ;
 }
 
-#aolyf-cat {
-  width:10%;
-  border-radius: 50%;
+
+img {
+  
+ border-radius: 50%;
+max-width:auto;
 
 }
-
-ul {
-  position: fixed;
-  color:pink;
-}
-
-ul a:visited {
-  color: pink;
-}
-
-li {
- list-style-type:none;
-}
-
-.bio {
-  text-align: center;
-  font-family: 'Crimson Text', sans-serif;
-}
-
-.bio-portfolio img {
-  height: 25%;
-  width: 35%;
-  margin: auto;
-  }
 
 .media-links a { MARGIN: 10px;}
+
 
