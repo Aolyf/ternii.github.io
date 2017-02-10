@@ -48,6 +48,7 @@ a {
 main,
 p {
   color: rgb(255,150, 150);
+  text-align:center;
 }
 hr{
   width:50px;
