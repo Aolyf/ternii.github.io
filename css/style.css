@@ -1,29 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=VT323');
 body {
-  background: url("http://hdwallpaperdaily.com/wp-content/uploads/2015/03/flower-design-abstract-wallpaper.png") no-repeat center center fixed;
+  text-align:center;
+  background: url("http://hdwallpaperdaily.com/wp-content/uploads/2015/03/flower-design-abstract-wallpaper.png")
+    no-repeat
+    center
+    center
+    fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   font-family: 'VT323', monospace;
-  font-size: 2.1em;
+  font-size: 3em;
 }
-
+p{
+  color:cyan;
+}
 #page-wrap {
-  width: 75%;
+  width: 100%;
   margin: 50px auto;
-  padding: 20px;
+  padding: 25px;
   background: black;
   -moz-box-shadow: 0 0 20px black;
   -webkit-box-shadow: 0 0 20px black;
   box-shadow: 0 0 20px black;
-  
 }
 
-nav {
-  display: block;
-  text-align: center;
-}
+
 
 img {
   border-radius: 50%;
@@ -36,66 +39,11 @@ img {
 html {
   font-family: 'VT323', monospace;
 }
-
-a:hover {
-  text-decoration: none;
-}
-
 a {
-  color: rgb(255, 80, 255);
-}
-
-main,
-p {
-  color: rgb(255,150, 150);
+  color: rgb(120, 255, 89);
   text-align:center;
 }
-hr{
-  width:50px;
-    
-}
-sc{
-  float:left;
-}
-#music{
-  color:red;
-  text-align:center;
-  font-size:30px;
-}
 
-iframe
-{
-  display:inline;
-  text-align:center;
-  
+span{
+  color:cyan;
 }
-.instagram-media{
-  width:250px;
-  
-}
-
-#sc
-{
-  display:inline-block;
-  border-style:solid;
-  border-color:black;
-  left:20px;
-  width:auto;
-  padding: auto;
-  margin-left:5%;
-  
-}
-iframe, blockquote{
-  width:275px;
-}
-#ig{
-  border-style:solid;
-  text-align:center;
-  border-color:black;
-  width:275px;
-  margin-left:14%;
-  padding:auto;
-  display:inline-block;
-  
-}
-
