@@ -25,13 +25,9 @@
   <p class='fitness text-center ' onclick="openFitnessBox()"><span>Fitness</span></p>
   <p class='math text-center ' onclick="openMathBox()"><span>Math</span></p>
   <p class='lang text-center ' onclick="openLangBox()"><span>Language</span></p>
-</div>
-<!-- End Wrap -->
-
-
-<!-- Overlays -->
-<!-- Programming -->
-<div id="progBox" class="text-center">
+  
+  
+  <div id="progBox" class="text-center">
   <div id="closeButton" onclick="closeProgBox()"> X </div>
   <br> 
   <p class='PS'><a href="http://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target='_blank'>CS50x</a></p>
@@ -94,7 +90,13 @@
   <br>
   <p class='PS'><a href="https://www.memrise.com/" target = '_blank' >Memrise</a><p>
   <p class='PS'><a href="https://www.duolingo.com/" target='_blank'>Duolingo</a></p>
+</div> 
 </div>
+<!-- End Wrap -->
+
+
+<!-- Overlays -->
+<!-- Programming -->
 
 
 <script>
@@ -139,7 +141,7 @@
   }
   
   
-  
+  <!-- Allow esc button to close overlays -->
  document.onkeydown = function(evt) {
     if (evt.keyCode == 27) {
       document.getElementById("mathBox").style.display = "none";
@@ -159,14 +161,11 @@
 <!-- Radio -->
 
 <div class="radio text-center">
-  <video class='text-center' controls="" autoplay=""><source src="http://ice1.somafm.com/fluid-128-mp3" type="audio/mpeg"></video>
+  <video class='text-center' controls="" autoplay="true"><source src="http://ice1.somafm.com/fluid-128-mp3" type="audio/mpeg"></video>
 </div>
 <div class="rain">
-  <video onloadstart="this.volume=0.3" controls="" autoplay=""><source src="https://ia801403.us.archive.org/6/items/RainyMood.comOfficial/RainyMood.com%20(Official).mp3" type="audio/mpeg"></video>
+  <video onloadstart="this.volume=0.25" controls="" autoplay="true"><source src="https://ia801403.us.archive.org/6/items/RainyMood.comOfficial/RainyMood.com%20(Official).mp3" type="audio/mpeg"></video>
 </div>
-
-
-<!-- end radui -–>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
