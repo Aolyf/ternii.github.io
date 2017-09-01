@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300');
 body {
   background: /*url('https://media.giphy.com/media/26xBxU4RsP2HFdUqc/giphy.gif')*/
-    url('https://i.pinimg.com/originals/6c/ef/79/6cef7917cd472b648cabe2708515a579.gif')
+    url('https://i.imgur.com/9WgJg0G.gif')
     no-repeat
     center
     center
@@ -34,6 +34,7 @@ span {
   margin:0;
 }
 /* Begin backgrounds */
+/*
 .coding {
   background-image: url('http://www.wallpaperup.com/uploads/wallpapers/2012/12/11/24363/big_thumb_443b883e839ba3fbee3be6a75ee70bd0.jpg');
   background-size: cover;
@@ -53,7 +54,7 @@ span {
 .math {
   background-image: url('http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/09/math-problems-hd-wallpapers.jpg');
   background-size: cover;
-}
+}*/
 /* End backgrounds */
 
 .wrap {
@@ -63,7 +64,8 @@ span {
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
-  opacity:.7
+  opacity:.6;
+    
 }
 .coding, .music, .news, .fitness, .math, .lang {
   color: cyan;
@@ -78,46 +80,48 @@ span {
   border-style: solid;
   border-color: white;
   display:none;
-  height: 20em;
-  width: 25%;
+  height: 100%;
+  width: 100%;
   background-color: black;
   color: white;
   overflow: scroll;
   overflow-x: hidden;
+  
 }
 
 #closeButton {
   background-color: red;
   text-decoration: none !important;
   cursor:pointer;
-  float:right;
+  width:10%;
+  height:10%;
   position:absolute;
 }
 
 a, a:hover, a:visited{
-  color:inherit;
+  color:rgb(72, 244, 66);
   text-decoration:none;
+  opacity:1 !important;
 }
 
-.vid { /* radio, idk where it went lmao */
-  display-style: solid;
-  display-color: white;
-  display: inline-block;
-  z-index: -1;
-}
-.PS { /*overlay link appearance*/
-  color:rgb(255, 150, 223);
-  font-size:2em;
+
+.PS { /*overlay link appearance*/ 
+  font-size:2.5em;
 }
 .rain{
   margin:0px;
   padding:1px;
-  display:inline-block;
+  display:none;
   position:relative;
   float:right;
 }
 .radio{
+  display:none;
   position:relative;
   float:left;
-  margin:padding:
+  margin:0px;
+  padding:0px;
+}
+a{
+  opacity:1;
 }
