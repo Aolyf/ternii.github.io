@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Bookmarks jq</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="wrap">
+  <p class='coding text-center' onclick="openProgBox()"><span>Programming</span></p>
+  <p class='music text-center' onclick="openMusicBox()"><span>Music</span></p>
+  <p class='news text-center ' onclick="openNewsBox()"><span>News/Finance</span></p>
+  <p class='fitness text-center ' onclick="openFitnessBox()"><span>Fitness</span></p>
+  <p class='math text-center ' onclick="openMathBox()"><span>Math</span></p>
+  <p class='lang text-center ' onclick="openLangBox()"><span>Language</span></p>
+
+</div>
+
+<!--------------------------------------------------->
+
+
+<!--begin overlays-->
+<!-- Programming" -->
+<div id="progBox" class="text-center">
+  <div id="closeButton" onclick="closeProgBox()"> X </div>
+  <br> 
+  <p class='PS'>CS50x</p>
+  <p class='PS'>CodingBat</p>
+  <p class='PS'>repl.it</p>
+  <p class='PS'>jsfiddle</p>
+  <p class='PS'>r/learnprogramming</p>
+  <p class='PS'>Namecheap</p>
+  <p class='PS'>DigitalOcean</p>
+  <p class='PS'>Github</p>
+  <p class='PS'>thinkcspy</p>
+  <p class='PS'>Nifty Assignments</p>
+  <p class='PS'>StackoverFlow</p>
+</div>
+<!-- Music -->
+<div id="musicBox" class="text-center">
+  <div id="closeButton" onclick="closeMusicBox()"> X </div>
+  <br>
+  <p class='PS'>http://www.thejazzpianosite.com/about/</p>
+  <p class='PS'>http://tobyrush.com/theorypages/index.html</p>
+  <p class='PS'>LastFM</p>
+  <p class='PS'>Soundcloud</p>
+  <p class='PS'>Bandcamp</p>
+</div>
+<!-- News -->
+<div id="newsBox" class="text-center">
+  <div id="closeButton" onclick="closeNewsBox()"> X </div>
+  <br>
+  <p class='PS'>Wells Fargo</p>
+  <p class='PS'>CNN</p>
+  <p class='PS'>AP News</p>
+  <p class='PS'>Hacker News</p>
+  <p class='PS'>Google News</p>
+  <p class='PS'>SlashDot</p>
+  <p class='PS'>Techmeme</p>
+  <p class='PS'>Bloomberg</p>
+  <p class='PS'>NASDAQ</p>
+  <p class='PS'>ZeroHedge</p>
+  <p class='PS'>Wall Street Journal</p>
+  <p class='PS'>Finviz</p>
+  <p class='PS'>Tradingview</p>
+</div>
+<!-- Fitness -->
+<div id="fitnessBox" class="text-center">
+  <div id="closeButton" onclick="closeFitnessBox()"> X </div>
+  <br>
+  <p class='PS'>MyFitnessPal</p>
+  <p class='PS'>Bodybuilding</p>
+
+</div>
+<!-- Math -->
+<div id="mathBox" class="text-center">
+  <div id="closeButton" onclick="closeMathBox()"> X </div>
+  <br>
+  <p class='PS'>KhanAcademy<p>
+  <p class='PS'>Symbolab</p>
+  <p class='PS'>WolframAlpha</p>
+</div>
+<!-- Language -->
+<div id="langBox" class="text-center">
+  <div id="closeButton" onclick="closeLangBox()"> X </div>
+  <br>
+  <p class='PS'><a href="#" target = '_blank' >Memrise<a><p>
+  <p class='PS'>Duolingo</p>
+  <p class='PS'>NHK</p>
+</div>
+
+
+<script>
+  
+
+  function openProgBox() {
+    document.getElementById("progBox").style.display = "block";
+  }
+  function closeProgBox() {
+    
+    document.getElementById("progBox").style.display = "none";
+  }
+  function openMusicBox() {
+    document.getElementById("musicBox").style.display = "block";
+  }
+  function closeMusicBox() {
+    document.getElementById("musicBox").style.display = "none";
+  }
+  function openNewsBox() {
+    document.getElementById("newsBox").style.display = "block";
+  }
+  function closeNewsBox() {
+    document.getElementById("newsBox").style.display = "none";
+  }
+  function openFitnessBox() {
+    document.getElementById("fitnessBox").style.display = "block";
+  }
+  function closeFitnessBox() {
+    document.getElementById("fitnessBox").style.display = "none";
+  }
+  function openMathBox() {
+    document.getElementById("mathBox").style.display = "block";
+  }
+  function closeMathBox() {
+    document.getElementById("mathBox").style.display = "none";
+  }
+    function openLangBox() {
+    document.getElementById("langBox").style.display = "block";
+  }
+  function closeLangBox() {
+    document.getElementById("langBox").style.display = "none";
+  }
+  
+  
+  
+ document.onkeydown = function(evt) {
+    if (evt.keyCode == 27) {
+      document.getElementById("mathBox").style.display = "none";
+      document.getElementById("fitnessBox").style.display = "none";
+      document.getElementById("newsBox").style.display = "none";
+      document.getElementById("musicBox").style.display = "none";
+      document.getElementById("progBox").style.display = "none";
+      document.getElementById("langBox").style.display = "none";
+    }
+}; 
+ 
+
+
+</script>
+
+<!--end overlays-->
+<!-- Radio -->
+
+<div class="vid">
+  <video onloadstart="this.volume=0.3" controls="" autoplay="" name="media"><source src="https://ia801403.us.archive.org/6/items/RainyMood.comOfficial/RainyMood.com%20(Official).mp3" type="audio/mpeg"></video>
+  <video controls="" autoplay="" name="media"><source src="http://ice1.somafm.com/fluid-128-mp3" type="audio/mpeg"></video>
+</div>
+
+<!-- end radui -–>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

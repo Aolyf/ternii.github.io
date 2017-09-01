@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300');
+body {
+  background: /*url('https://media.giphy.com/media/26xBxU4RsP2HFdUqc/giphy.gif')*/
+    url('https://i.pinimg.com/originals/6c/ef/79/6cef7917cd472b648cabe2708515a579.gif')
+    no-repeat
+    center
+    center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+  BACKGROUND-COLOR: BLACK;
+}
+
+p {
+  font-family: 'Josefin Slab';
+  font-size: 4em;
+  background-color: black;
+  margin: 0px;
+  padding:0px;
+  opacity:.8;
+}
+
+p:hover {
+  opacity: 1;
+  cursor:pointer;
+}
+span {
+  background-color: black;
+  box-shadow: 1px 1px 2px 3px;
+  opacity:.9;
+  margin:0;
+}
+/* Begin backgrounds */
+.coding {
+  background-image: url('http://www.wallpaperup.com/uploads/wallpapers/2012/12/11/24363/big_thumb_443b883e839ba3fbee3be6a75ee70bd0.jpg');
+  background-size: cover;
+}
+.finance {
+  background-image: url('http://wallpapercave.com/wp/NV5qPJZ.jpg');
+  background-size: cover;
+}
+.music {
+  background-image: url('http://www.liambradburymusic.com/wp-content/uploads/2017/01/music-notation-1457967490-hero-wide-0.jpg');
+  background-size: cover;
+}
+.news {
+  background-image: url('http://opelikaobserver.com/wp-content/uploads/2017/05/2.jpg');
+  background-size: cover;
+}
+.math {
+  background-image: url('http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/09/math-problems-hd-wallpapers.jpg');
+  background-size: cover;
+}
+/* End backgrounds */
+
+.wrap {
+  background-color: black;
+  max-width: 80%;
+  box-shadow: 0px 5px 5px 5px;
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  opacity:.7
+}
+.coding, .music, .news, .fitness, .math, .lang {
+  color: cyan;
+}
+
+#fitnessBox, #mathBox, #newsBox, #musicBox, #progBox, #langBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border-style: solid;
+  border-color: white;
+  display:none;
+  height: 20em;
+  width: 25%;
+  background-color: black;
+  color: white;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#closeButton {
+  background-color: red;
+  text-decoration: none !important;
+  cursor:pointer;
+  float:right;
+  position:absolute;
+}
+
+a, a:hover, a:visited{
+  color:inherit;
+  text-decoration:none;
+}
+
+.vid { /* radio, idk where it went lmao */
+  display-style: solid;
+  display-color: white;
+  display: inline-block;
+  z-index: -1;
+}
+.PS { /*overlay link appearance*/
+  color:rgb(255, 150, 223);
+  font-size:2em;
+}
+video{
+  margin:0;
+  position:absolute;
+  border-style:solid;
+  height:auto;
+  display:none;
+}
