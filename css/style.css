@@ -1,49 +1,77 @@
-@import url('https://fonts.googleapis.com/css?family=VT323');
-body {
+body{
+  background-color:black;
+}
+a{
+  color:pink;
+}
+.glow {
+   
+    -webkit-animation: rainbow 3s linear 0s infinite;
+    animation: rainbow 3s linear 0s infinite
+}
+
+@-webkit-keyframes rainbow {
+    0% {
+        color: #F00
+    }
+
+    17% {
+        color: #FF0
+    }
+
+    33% {
+        color: #0F0
+    }
+
+    50% {
+        color: #0FF
+    }
+
+    67% {
+        color: #00F
+    }
+
+    84% {
+        color: #F0F
+    }
+
+    100% {
+        color: #F00
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        color: #F00
+    }
+
+    17% {
+        color: #FF0
+    }
+
+    33% {
+        color: #0F0
+    }
+
+    50% {
+        color: #0FF
+    }
+
+    67% {
+        color: #00F
+    }
+
+    84% {
+        color: #F0F
+    }
+
+    100% {
+        color: #F00
+    }
+}
+.wrap1{
   text-align:center;
-  background: url("http://hdwallpaperdaily.com/wp-content/uploads/2015/03/flower-design-abstract-wallpaper.png")
-    no-repeat
-    center
-    center
-    fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: 'VT323', monospace;
-  font-size: 3em;
 }
-p{
-  color:cyan;
-}
-#page-wrap {
-  width: 100%;
-  margin: 50px auto;
-  padding: 25px;
-  background: black;
-  -moz-box-shadow: 0 0 20px black;
-  -webkit-box-shadow: 0 0 20px black;
-  box-shadow: 0 0 20px black;
-}
-
-
-
-img {
-  border-radius: 50%;
-  display: block;
-  text-align: center;
-  width: 30%;
-  margin: auto;
-}
-
-html {
-  font-family: 'VT323', monospace;
-}
-a {
-  color: rgb(120, 255, 89);
-  text-align:center;
-}
-
-span{
-  color:cyan;
+img{
+  border-radius:50%;
 }
