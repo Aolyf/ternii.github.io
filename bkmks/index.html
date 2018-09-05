@@ -19,6 +19,7 @@
 <body>
   <!-- Wrap -->
 <div class="wrap">
+  <p class='coding text-center' onclick="openAbout()"><span>About me</span></p>
   <p class='coding text-center' onclick="openProgBox()"><span>Programming</span></p>
   <p class='music text-center' onclick="openMusicBox()"><span>Music</span></p>
   <p class='news text-center ' onclick="openNewsBox()"><span>News/Finance</span></p>
@@ -26,9 +27,16 @@
   <p class='math text-center ' onclick="openMathBox()"><span>Math</span></p>
   <p class='lang text-center ' onclick="openLangBox()"><span>Language</span></p>
   
+  <div id="about" class="text-center">
+  <div id="closeButton" onclick="closeAbout"> X </div>
+    <br>
+    <p> Lorem Ipsum </p>
+    
+  </div>  
+ 
   
   <div id="progBox" class="text-center">
-  <div id="closeButton" onclick="closeProgBox()"> X </div>
+ <div id="closeButton" onclick="closeProgBox()"> X </div>
   <br> 
   <p class='PS'><a href="http://www.edx.org/course/introduction-computer-science-harvardx-cs50x" target='_blank'>CS50x</a></p>
   <p class='PS'><a href="http://codingbat.com/java" target='_blank'>CodingBat</a></p>
@@ -101,38 +109,48 @@
 
 <script>
   
-
+  function openAbout() {
+    document.getElementById("about").style.display = "block";
+  }
+  function closeAbout() {
+    document.getElementById("about").style.display = "none";
+  }
+  
   function openProgBox() {
     document.getElementById("progBox").style.display = "block";
   }
-  function closeProgBox() {
-    
+  function closeProgBox() {   
     document.getElementById("progBox").style.display = "none";
   }
+  
   function openMusicBox() {
     document.getElementById("musicBox").style.display = "block";
   }
   function closeMusicBox() {
     document.getElementById("musicBox").style.display = "none";
   }
+  
   function openNewsBox() {
     document.getElementById("newsBox").style.display = "block";
   }
   function closeNewsBox() {
     document.getElementById("newsBox").style.display = "none";
   }
+  
   function openFitnessBox() {
     document.getElementById("fitnessBox").style.display = "block";
   }
   function closeFitnessBox() {
     document.getElementById("fitnessBox").style.display = "none";
   }
+  
   function openMathBox() {
     document.getElementById("mathBox").style.display = "block";
   }
   function closeMathBox() {
     document.getElementById("mathBox").style.display = "none";
   }
+  
     function openLangBox() {
     document.getElementById("langBox").style.display = "block";
   }
@@ -144,6 +162,7 @@
   <!-- Allow esc button to close overlays -->
  document.onkeydown = function(evt) {
     if (evt.keyCode == 27) {
+      document.getElementById("about").style.display = "none";
       document.getElementById("mathBox").style.display = "none";
       document.getElementById("fitnessBox").style.display = "none";
       document.getElementById("newsBox").style.display = "none";
