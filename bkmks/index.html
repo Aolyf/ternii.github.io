@@ -5,7 +5,7 @@
   <title>bkmks</title>
   <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <title>The Zone</title>
   
@@ -25,10 +25,10 @@
 <!--   <p class='math text-center ' onclick="openMathBox()"><span>Math</span></p> -->
 <!--   <p class='lang text-center ' onclick="openLangBox()"><span>Language</span></p> -->
   
-  <div id="about" class="text-center">
-  <div id="closeButton" onclick="closeAbout"> X </div>
+  <div id="aboutBox" class="text-center">
+  <div id="closeButton" onclick="closeAboutBox"> X </div>
     <br>
-    <p>a</p>
+    <p>Hi, I'm Calvin. I play bass guitar in Satyr and I compose under the name Purrfling. </p>
   </div>  
  
   
@@ -107,10 +107,10 @@
 
 <script>
   
-  function openAbout() {
+  function openAboutBox() {
     document.getElementById("about").style.display = "block";
   }
-  function closeAbout() {
+  function closeAboutBox() {
     document.getElementById("about").style.display = "none";
   }
   
@@ -160,7 +160,7 @@
   <!-- Allow esc button to close overlays -->
  document.onkeydown = function(evt) {
     if (evt.keyCode == 27) {
-      document.getElementById("about").style.display = "none";
+      document.getElementById("aboutBox").style.display = "none";
       document.getElementById("mathBox").style.display = "none";
       document.getElementById("fitnessBox").style.display = "none";
       document.getElementById("newsBox").style.display = "none";
