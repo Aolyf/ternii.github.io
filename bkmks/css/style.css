@@ -71,7 +71,7 @@ span {
   color: cyan;
 }
 
-#fitnessBox, #mathBox, #newsBox, #musicBox, #progBox, #langBox {
+#fitnessBox, #mathBox, #newsBox, #musicBox, #progBox, #langBox, #about {
   position: fixed;
   top: 50%;
   left: 50%;
