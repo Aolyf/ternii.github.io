@@ -1,82 +1,110 @@
-html, body { 
-    background-color: black;
-    font-size: 1.5em;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300');
+body {
+  background: /*url('https://media.giphy.com/media/26xBxU4RsP2HFdUqc/giphy.gif')*/
+    url('https://i.imgur.com/9WgJg0G.gif')
+    no-repeat
+    center
+    center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+  BACKGROUND-COLOR: BLACK;
+}
+
+p {
+  font-family: 'Josefin Slab';
+  font-size: 4em;
+  background-color: black;
+  margin: 0px;
+  padding:0px;
+  opacity:.8;
+}
+
+p:hover {
+  opacity: 1;
+  cursor:pointer;
+}
+span {
+  background-color: black;
+  box-shadow: 1px 1px 2px 3px;
+  opacity:.9;
+  margin:0;
+}
+
+.wrap {
+  background-color: black;
+  box-shadow: 0px 5px 5px 5px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  opacity:.7;
     
 }
-a{
-  color:pink;
+.coding, .music, .news, .fitness, .math, .lang, .about, .contact {
+  color: cyan;
 }
-.glow {
-   
-    -webkit-animation: rainbow 3s linear 0s infinite;
-    animation: rainbow 3s linear 0s infinite
+.gmail{
+  font-size: 1.5em;
 }
-
-@-webkit-keyframes rainbow {
-    0% {
-        color: #F00
-    }
-
-    17% {
-        color: #FF0
-    }
-
-    33% {
-        color: #0F0
-    }
-
-    50% {
-        color: #0FF
-    }
-
-    67% {
-        color: #F0F
-    }
-
-    84% {
-        color: #F0F
-    }
-
-    100% {
-        color: #F00
-    }
+#aboutBox{
+  font-size: .35em; 
 }
-
-@keyframes rainbow {
-    0% {
-        color: #F00
-    }
-
-    17% {
-        color: #FF0
-    }
-
-    33% {
-        color: #0F0
-    }
-
-    50% {
-        color: #0FF
-    }
-
-    67% {
-        color: #00F
-    }
-
-    84% {
-        color: #F0F
-    }
-
-    100% {
-        color: #F00
-    }
-}
-
-.wrap1{
-  position:relative;
+#fitnessBox, #mathBox, #newsBox, #musicBox, #progBox, #langBox, #aboutBox, #contactBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border-style: solid;
+  border-color: white;
+  display:none;
+  height: 100%;
+  width: 150%;
+  background-color: black;
+  color: white;
+  overflow: scroll;
+  overflow-x: hidden;
   
 }
+
+#closeButton {
+  background-color: red;
+  text-decoration: none !important;
+  cursor:pointer;
+  width:15%;
+  height:10%;
+  position:absolute;
+  float:left;
 }
-img{
-  border-radius:50%;
+
+a, a:hover, a:visited{
+  color:rgb(72, 244, 66);
+  text-decoration:none;
+  opacity:1 !important;
+}
+
+
+.PS { /*overlay link appearance*/ 
+  font-size:2.5em;
+}
+.rain{
+  margin:0px;
+  padding:1px;
+  display:none;
+  position:relative;
+  float:right;
+}
+.radio{
+  display:relative;
+  position:relative;
+  /*float:left;*/
+  margin:0 auto;
+  padding:0px;
+}
+a{
+  opacity:1;
 }
