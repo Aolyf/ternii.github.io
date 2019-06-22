@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300');
-body {
+/*html {
   background: /*url('https://media.giphy.com/media/26xBxU4RsP2HFdUqc/giphy.gif')*/
     url('https://i.imgur.com/9WgJg0G.gif')
     no-repeat
@@ -11,8 +11,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   z-index: -1;
-  BACKGROUND-COLOR: BLACK;
-}
+}*/
 
 p {
   font-family: 'Josefin Slab';
@@ -24,7 +23,6 @@ p {
 }
 
 p:hover {
-  opacity: 1;
   cursor:pointer;
 }
 span {
@@ -81,7 +79,7 @@ span {
   float:left;
 }
 
-a, a:hover, a:visited{
+a, a:visited{
   color:rgb(72, 244, 66);
   text-decoration:none;
   opacity:1 !important;
