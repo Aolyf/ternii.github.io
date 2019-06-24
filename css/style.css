@@ -8,7 +8,7 @@
     fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover; 
   background-size: cover;
   z-index: -1;
 }*/
@@ -40,7 +40,6 @@ span {
   left:50%;
   transform: translate(-50%, -50%);
   opacity:.7;
-    
 }
 .coding, .music, .news, .fitness, .math, .lang, .about, .contact {
   color: cyan;
