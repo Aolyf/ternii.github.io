@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300');
+html {
+  background: url('https://media.giphy.com/media/26xBxU4RsP2HFdUqc/giphy.gif')
+    url('')
+    no-repeat
+    center
+    center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  background-size: cover;
+ 
+}
+
+
+p {
+  color: crimson;
+}
+
+.p2 {
+  background-color: purple;
+}
+
+.peas {
+  background-image: url("img/bwa.jpg");
+}
