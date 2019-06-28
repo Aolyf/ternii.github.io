@@ -25,3 +25,11 @@ p {
 .peas {
   background-image: url("img/bwa.jpg");
 }
+.float_left {
+  float: left;
+  font-size: 100px;
+}
+.float_right {
+  float: right;
+  font-size: 100px;
+}
