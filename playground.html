@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel="stylesheet" href="css/playground.css">
-<link rel="icon" 
-      type="image/png" 
-      href="https://images.vexels.com/Contact/users/3/138476/isolated/lists/dba7957d1fcee0858a830168d7cd49f8-dolphin-jumping-silhouette.png">
-<title> Calvin </title> 
-    <!-- <script>
-      alert("This is a script");
-    </script> -->
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/playground.css">
+		<script>
+			setTimeout(wakeUpUser, 5000);
+			function wakeUpUser() {
+			alert("are you going to stare at this boring page forever?");
+			}
+		</script>
+	<script src="js/playground.js"></script> 
+	<title> Calvin </title> 
 </head>
 
 <body>
@@ -30,11 +30,16 @@
 	<p class="p2"> My life got flipped turned upside down...</p>  
 	</div>
 
+	<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+	<p id="demo"></p>
+
 	<div>
 		<span class="float_left">A</span>
 		<span class="float_right">B</span>
-		<span class="float_left">C</span>
-		<span class="float_right">D</span>
+		<button class="button_test" type="button">Test</button>
 
 	</div>
 	
